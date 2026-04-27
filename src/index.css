@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  --animate-pulse-slow: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  --animate-spin-slow: spin 4s linear infinite;
+  
+  --animate-fade-in-up: fadeInUp 1s ease-out forwards;
+  --animate-fade-in-right: fadeInRight 1s ease-out 0.3s forwards;
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(2rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translateX(2rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+}
